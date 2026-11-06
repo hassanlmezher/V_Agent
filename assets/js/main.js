@@ -3,7 +3,7 @@
   "use strict";
 
   // Where contact + newsletter requests are sent. Change this in one place.
-  var CONTACT_EMAIL = "hello@vagent.online";
+  var CONTACT_EMAIL = "v961agent@gmail.com";
 
   document.documentElement.classList.add("js");
 

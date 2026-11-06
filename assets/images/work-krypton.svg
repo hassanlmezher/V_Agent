@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 560" font-family="Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0b14"/><stop offset="1" stop-color="#140d22"/></linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#03b5d3"/></linearGradient>
+    <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8d36db"/><stop offset=".55" stop-color="#5a1fb8"/><stop offset="1" stop-color="#03b5d3"/></linearGradient>
+    <linearGradient id="card2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2a36"/><stop offset="1" stop-color="#1a1a24"/></linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a26bff" stop-opacity=".45"/><stop offset="1" stop-color="#a26bff" stop-opacity="0"/></linearGradient>
+    <radialGradient id="glowV" cx=".3" cy=".5" r=".6"><stop offset="0" stop-color="#7c3aed" stop-opacity=".4"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowC" cx=".9" cy=".1" r=".5"><stop offset="0" stop-color="#03b5d3" stop-opacity=".25"/><stop offset="1" stop-color="#03b5d3" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".6"/></filter>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="1024" height="560" fill="url(#bg)"/>
+  <rect width="1024" height="560" fill="url(#glowV)"/>
+  <rect width="1024" height="560" fill="url(#glowC)"/>
+
+  <!-- top bar -->
+  <g transform="translate(64 44)">
+    <rect width="30" height="30" rx="9" fill="url(#grad)"/>
+    <path d="M10 8v14M10 15l9-7M10 15l9 7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+    <text x="42" y="21" fill="#e4e1e7" font-size="17" font-weight="700" font-family="'Space Grotesk', Inter, sans-serif">Krypton Pay</text>
+  </g>
+  <g fill="#958da1" font-size="13"><text x="620" y="65">Dashboard</text><text x="712" y="65">Transfers</text><text x="796" y="65">Cards</text></g>
+  <circle cx="944" cy="60" r="16" fill="#2a2933"/><text x="944" y="65" text-anchor="middle" fill="#d2bbff" font-size="12" font-weight="700">AT</text>
+
+  <!-- stacked cards -->
+  <g transform="translate(96 150) rotate(-10)" filter="url(#shadow)">
+    <rect width="320" height="196" rx="20" fill="url(#card2)" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="24" y="40" fill="#958da1" font-size="13" font-weight="600">KRYPTON · VAULT</text>
+  </g>
+  <g transform="translate(130 190) rotate(-4)" filter="url(#shadow)">
+    <rect width="320" height="196" rx="20" fill="url(#card1)"/>
+    <rect width="320" height="196" rx="20" fill="url(#sheen)"/>
+    <text x="24" y="40" fill="#fff" font-size="14" font-weight="700" letter-spacing="1">KRYPTON PAY</text>
+    <rect x="24" y="62" width="42" height="32" rx="6" fill="#ffd77a" fill-opacity=".85"/>
+    <path d="M24 78h42M45 62v32" stroke="#b8902e" stroke-opacity=".6"/>
+    <text x="24" y="134" fill="#fff" font-size="20" font-weight="600" letter-spacing="3" font-family="'JetBrains Mono', Menlo, monospace">5428 •••• •••• 8891</text>
+    <text x="24" y="170" fill="#ede0ff" font-size="12">A. THORNE</text>
+    <text x="226" y="170" fill="#ede0ff" font-size="12">09/29</text>
+    <circle cx="270" cy="40" r="14" fill="#fff" fill-opacity=".35"/><circle cx="288" cy="40" r="14" fill="#fff" fill-opacity=".2"/>
+  </g>
+
+  <!-- balance + quick transfer -->
+  <text x="96" y="460" fill="#958da1" font-size="12" font-weight="600" letter-spacing="1.4">TOTAL BALANCE</text>
+  <text x="96" y="498" fill="#e4e1e7" font-size="34" font-weight="700" font-family="'Space Grotesk', Inter, sans-serif">$248,930.42</text>
+  <rect x="340" y="468" width="120" height="40" rx="20" fill="url(#grad)"/>
+  <text x="400" y="493" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Send ↗</text>
+
+  <!-- chart panel -->
+  <rect x="540" y="104" width="420" height="262" rx="18" fill="#1a1922" stroke="#ffffff" stroke-opacity=".08"/>
+  <text x="564" y="136" fill="#958da1" font-size="12" font-weight="600" letter-spacing="1.4">VOLUME PROCESSED</text>
+  <text x="564" y="172" fill="#e4e1e7" font-size="28" font-weight="700">$42.0M</text>
+  <rect x="680" y="152" width="58" height="24" rx="12" fill="#4cd7f6" fill-opacity=".15"/>
+  <text x="709" y="169" text-anchor="middle" fill="#4cd7f6" font-size="12" font-weight="700">+18%</text>
+  <path d="M564 320C600 300 616 250 650 262S700 310 730 270 780 200 812 222 860 280 890 230 920 190 936 196V340H564Z" fill="url(#area)"/>
+  <path d="M564 320C600 300 616 250 650 262S700 310 730 270 780 200 812 222 860 280 890 230 920 190 936 196" fill="none" stroke="#a26bff" stroke-width="6" stroke-opacity=".4" filter="url(#blur)"/>
+  <path d="M564 320C600 300 616 250 650 262S700 310 730 270 780 200 812 222 860 280 890 230 920 190 936 196" fill="none" stroke="#c9a6ff" stroke-width="2.5"/>
+  <path d="M564 330C604 322 640 300 676 306S740 320 776 292 840 270 876 280 920 262 936 258" fill="none" stroke="#4cd7f6" stroke-width="2" stroke-dasharray="4 5" opacity=".8"/>
+
+  <!-- transactions -->
+  <rect x="540" y="382" width="420" height="126" rx="18" fill="#1a1922" stroke="#ffffff" stroke-opacity=".08"/>
+  <g font-size="13">
+    <circle cx="574" cy="416" r="14" fill="#7c3aed" fill-opacity=".25"/><path d="M568 416h12M576 411l5 5-5 5" stroke="#d2bbff" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="600" y="413" fill="#e4e1e7" font-weight="600">Transfer to Lisbon HQ</text><text x="600" y="430" fill="#958da1" font-size="11">Encrypted · 0.4s</text>
+    <text x="936" y="420" text-anchor="end" fill="#e4e1e7" font-weight="600">−$12,400</text>
+    <line x1="564" y1="446" x2="936" y2="446" stroke="#ffffff" stroke-opacity=".06"/>
+    <circle cx="574" cy="476" r="14" fill="#03b5d3" fill-opacity=".25"/><path d="M580 476h-12M572 471l-5 5 5 5" stroke="#4cd7f6" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="600" y="473" fill="#e4e1e7" font-weight="600">Payout · Stripe settlement</text><text x="600" y="490" fill="#958da1" font-size="11">Verified · 0.3s</text>
+    <text x="936" y="480" text-anchor="end" fill="#4cd7f6" font-weight="600">+$38,920</text>
+  </g>
+</svg>

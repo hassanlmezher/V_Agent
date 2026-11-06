@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 560" font-family="'Space Grotesk', Inter, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#07070c"/><stop offset=".62" stop-color="#140f24"/><stop offset="1" stop-color="#05121a"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#03b5d3"/>
+    </linearGradient>
+    <linearGradient id="faceA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4cd7f6" stop-opacity=".85"/><stop offset="1" stop-color="#03b5d3" stop-opacity=".25"/></linearGradient>
+    <linearGradient id="faceB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a26bff" stop-opacity=".9"/><stop offset="1" stop-color="#7c3aed" stop-opacity=".25"/></linearGradient>
+    <linearGradient id="faceC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#4cd7f6" stop-opacity=".05"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4cd7f6" stop-opacity="0"/><stop offset=".5" stop-color="#4cd7f6" stop-opacity=".7"/><stop offset="1" stop-color="#4cd7f6" stop-opacity="0"/></linearGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/><stop offset=".5" stop-color="#03b5d3" stop-opacity=".15"/><stop offset="1" stop-color="#03b5d3" stop-opacity="0"/></radialGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+    <clipPath id="floor"><rect x="0" y="360" width="1024" height="200"/></clipPath>
+  </defs>
+  <rect width="1024" height="560" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#fff" opacity=".6">
+    <circle cx="90" cy="60" r="1.2"/><circle cx="210" cy="140" r="1"/><circle cx="330" cy="40" r="1.4"/><circle cx="460" cy="110" r="1"/>
+    <circle cx="610" cy="50" r="1.2"/><circle cx="740" cy="130" r="1"/><circle cx="880" cy="70" r="1.4"/><circle cx="960" cy="180" r="1"/>
+    <circle cx="150" cy="250" r="1"/><circle cx="930" cy="290" r="1.2"/><circle cx="60" cy="330" r="1"/>
+  </g>
+
+  <!-- halo -->
+  <circle cx="512" cy="250" r="300" fill="url(#halo)"/>
+
+  <!-- perspective grid floor -->
+  <g clip-path="url(#floor)" stroke="#4cd7f6" stroke-opacity=".35" stroke-width="1.2">
+    <path d="M512 360L-400 560M512 360L-150 560M512 360L80 560M512 360L300 560M512 360L512 560M512 360L724 560M512 360L944 560M512 360L1174 560M512 360L1424 560"/>
+    <path d="M0 368H1024M0 380H1024M0 398H1024M0 424H1024M0 460H1024M0 508H1024" stroke="#7c3aed" stroke-opacity=".45"/>
+  </g>
+  <rect x="0" y="356" width="1024" height="6" fill="url(#beam)" opacity=".8"/>
+
+  <!-- light streaks -->
+  <g opacity=".75">
+    <rect x="-40" y="188" width="560" height="3" fill="url(#beam)" transform="rotate(-12 240 190)"/>
+    <rect x="520" y="300" width="560" height="2" fill="url(#beam)" transform="rotate(-12 800 300)"/>
+    <rect x="460" y="120" width="460" height="2" fill="url(#beam)" transform="rotate(-12 690 120)"/>
+  </g>
+
+  <!-- big central prism (octahedron) -->
+  <g transform="translate(512 250)">
+    <polygon points="0,-150 110,0 0,40" fill="url(#faceA)" stroke="#bff3ff" stroke-opacity=".7"/>
+    <polygon points="0,-150 -110,0 0,40" fill="url(#faceB)" stroke="#e6d6ff" stroke-opacity=".7"/>
+    <polygon points="0,40 110,0 0,120" fill="#03b5d3" fill-opacity=".35" stroke="#bff3ff" stroke-opacity=".5"/>
+    <polygon points="0,40 -110,0 0,120" fill="#7c3aed" fill-opacity=".4" stroke="#e6d6ff" stroke-opacity=".5"/>
+    <polygon points="0,-150 30,-20 0,40 -30,-20" fill="url(#faceC)"/>
+  </g>
+  <ellipse cx="512" cy="392" rx="120" ry="12" fill="#4cd7f6" opacity=".35" filter="url(#blur)"/>
+
+  <!-- floating cube left -->
+  <g transform="translate(250 230) rotate(-8)">
+    <polygon points="0,-46 52,-20 0,6 -52,-20" fill="url(#faceC)" stroke="#bff3ff" stroke-opacity=".6"/>
+    <polygon points="-52,-20 0,6 0,64 -52,38" fill="#7c3aed" fill-opacity=".45" stroke="#e6d6ff" stroke-opacity=".5"/>
+    <polygon points="52,-20 0,6 0,64 52,38" fill="#03b5d3" fill-opacity=".4" stroke="#bff3ff" stroke-opacity=".5"/>
+  </g>
+  <!-- floating small prism right -->
+  <g transform="translate(790 190) rotate(14)">
+    <polygon points="0,-60 48,30 -48,30" fill="url(#faceB)" stroke="#e6d6ff" stroke-opacity=".7"/>
+    <polygon points="0,-60 48,30 10,44" fill="#03b5d3" fill-opacity=".45" stroke="#bff3ff" stroke-opacity=".5"/>
+  </g>
+  <!-- tiny shards -->
+  <g fill="#4cd7f6" opacity=".8">
+    <polygon points="160,120 172,132 158,140"/><polygon points="880,330 896,322 892,342"/><polygon points="680,90 690,104 674,104"/>
+    <polygon points="360,320 374,312 372,330"/><polygon points="940,110 952,124 936,128"/>
+  </g>
+  <g fill="#a26bff" opacity=".85">
+    <polygon points="380,150 394,160 378,170"/><polygon points="700,330 714,322 712,342"/><polygon points="110,300 124,292 122,312"/>
+  </g>
+
+  <!-- play button (launch video) -->
+  <circle cx="512" cy="250" r="44" fill="#0e0e12" fill-opacity=".55" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+  <path d="M500 230v40l32-20z" fill="#fff"/>
+
+  <!-- title -->
+  <text x="512" y="474" text-anchor="middle" fill="#ffffff" font-size="40" font-weight="700" letter-spacing="10">VANGUARD SPATIAL</text>
+  <text x="512" y="506" text-anchor="middle" fill="#4cd7f6" font-size="14" font-weight="600" letter-spacing="6">THE FUTURE OF IMMERSIVE REALITY</text>
+
+  <!-- video HUD -->
+  <g font-family="'JetBrains Mono', Menlo, monospace" font-size="13" fill="#e4e1e7">
+    <circle cx="44" cy="40" r="6" fill="#ff5c7a"/>
+    <text x="58" y="45">REC  00:00:42:16</text>
+    <text x="980" y="45" text-anchor="end" fill="#958da1">4K · 60FPS</text>
+  </g>
+  <rect x="40" y="532" width="944" height="4" rx="2" fill="#ffffff" fill-opacity=".12"/>
+  <rect x="40" y="532" width="380" height="4" rx="2" fill="url(#grad)"/>
+</svg>

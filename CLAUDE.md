@@ -6,7 +6,7 @@ Company website for **VAgent**, live at https://vagent.online.
 - Plain static site. No framework, no build step, no npm.
 - Pages (root): `index.html`, `services.html`, `work.html`, `pricing.html`, `about.html`, `contact.html`, `privacy.html`, `terms.html`, `404.html`.
 - Shared styles: `assets/css/styles.css` (design tokens at the top). Shared JS: `assets/js/main.js` (mobile menu, work filters, contact + newsletter forms; `CONTACT_EMAIL` set at the top).
-- Images: `assets/images/`. Original Google Stitch export kept for reference in `design/stitch-export/`.
+- Images: `assets/images/` (project visuals are SVGs drawn for the site).
 - Header and footer are repeated in every page: when you change the nav or footer, update all pages.
 - Hosted free on **Cloudflare Pages**, connected to this GitHub repo.
 - **Every push to `main` deploys to production automatically** (live about 1 minute later). Treat a push to `main` as a release.
