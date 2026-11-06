@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — V-Agent</title>
+  <meta name="description" content="Tell us about your project or book a free 30-minute discovery call with V-Agent.">
+  <link rel="canonical" href="https://vagent.online/contact">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — V-Agent">
+  <meta property="og:description" content="Tell us about your project or book a free 30-minute discovery call with V-Agent.">
+  <meta property="og:url" content="https://vagent.online/contact">
+  <meta property="og:image" content="https://vagent.online/icon-512.png">
+  <meta name="theme-color" content="#131317">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&display=block">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="V-Agent home">
+      <img src="logo.png" alt="" width="34" height="34">
+      <span>V-Agent</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm" href="contact.html">Book a Call</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="ms icon-open" aria-hidden="true">menu</span>
+        <span class="ms icon-close" aria-hidden="true">close</span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <nav aria-label="Mobile">
+    <a href="index.html">Home<span class="ms" aria-hidden="true">arrow_forward</span></a>
+      <a href="services.html">Services<span class="ms" aria-hidden="true">arrow_forward</span></a>
+      <a href="work.html">Work<span class="ms" aria-hidden="true">arrow_forward</span></a>
+      <a href="pricing.html">Pricing<span class="ms" aria-hidden="true">arrow_forward</span></a>
+      <a href="about.html">About<span class="ms" aria-hidden="true">arrow_forward</span></a>
+      <a href="contact.html" aria-current="page">Contact<span class="ms" aria-hidden="true">arrow_forward</span></a>
+  </nav>
+  <a class="btn btn--primary btn--block btn--lg" href="contact.html">Book a Free Call <span class="ms" aria-hidden="true">calendar_today</span></a>
+</div>
+<main id="main">
+<section class="page-hero">
+  <div class="glow glow--violet" style="width:30rem;height:30rem;top:-12rem;left:10%"></div>
+  <div class="glow glow--cyan" style="width:26rem;height:26rem;top:-6rem;right:5%"></div>
+  <div class="container">
+    <span class="pill eyebrow">Contact</span>
+    <h1 class="display">Let's Build <span class="gradient-text">Something Great</span></h1>
+    <p class="lead">Tell us a little about your project and we'll get back to you within one business day with next steps.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:1rem" aria-label="Contact form and details">
+  <div class="container contact-grid">
+    <div class="card reveal">
+      <h2 class="h-lg" style="margin-bottom:1.5rem">Tell us about your project</h2>
+      <form class="form" id="contact-form" novalidate>
+        <div class="form__row">
+          <div class="field">
+            <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input class="input" id="name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" required aria-describedby="name-err">
+            <span class="field__error" id="name-err">Please enter your name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Work email <span class="req" aria-hidden="true">*</span></label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required aria-describedby="email-err">
+            <span class="field__error" id="email-err">Please enter a valid email address.</span>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label for="company">Company</label>
+            <input class="input" id="company" name="company" type="text" autocomplete="organization" placeholder="Company name">
+          </div>
+          <div class="field">
+            <label for="service">What do you need?</label>
+            <select class="input" id="service" name="service">
+              <option value="unsure">Not sure yet</option>
+              <option value="web">Website development</option>
+              <option value="ai">AI agents &amp; automation</option>
+              <option value="video">Marketing videos</option>
+              <option value="all">All of the above</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label for="plan">Plan</label>
+            <select class="input" id="plan" name="plan">
+              <option value="undecided">Undecided</option>
+              <option value="starter">Starter — $4,900/mo</option>
+              <option value="growth">Growth — $8,900/mo</option>
+              <option value="pro">Pro — $14,500/mo</option>
+              <option value="custom">Custom / one-off project</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="budget">Budget</label>
+            <select class="input" id="budget" name="budget">
+              <option value="na">Prefer not to say</option>
+              <option value="lt5">Under $5k</option>
+              <option value="5-15">$5k – $15k</option>
+              <option value="15-50">$15k – $50k</option>
+              <option value="gt50">$50k+</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Project details <span class="req" aria-hidden="true">*</span></label>
+          <textarea class="input" id="message" name="message" placeholder="What are you trying to achieve? Any deadlines or links we should see?" required minlength="10" aria-describedby="message-err"></textarea>
+          <span class="field__error" id="message-err">Please tell us a little about your project (at least 10 characters).</span>
+        </div>
+        <button class="btn btn--primary btn--lg btn--block" type="submit">Send message <span class="ms" aria-hidden="true">send</span></button>
+        <p class="small muted" style="text-align:center">Submitting opens your email app with your message ready to send.</p>
+        <div class="form-status form-status--ok" id="form-status" role="status" hidden></div>
+      </form>
+    </div>
+
+    <aside class="stack" style="gap:1.5rem">
+      <div class="card card--flat reveal">
+        <h2 class="h-sm" style="margin-bottom:1.5rem">Get in touch</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <span class="icon-tile icon-tile--primary"><span class="ms" aria-hidden="true">alternate_email</span></span>
+            <div><b>Email</b><a data-contact-email href="mailto:hello@vagent.online">hello@vagent.online</a></div>
+          </div>
+          <div class="info-item">
+            <span class="icon-tile icon-tile--secondary"><span class="ms" aria-hidden="true">schedule</span></span>
+            <div><b>Response time</b><span class="small muted">Within one business day</span></div>
+          </div>
+          <div class="info-item">
+            <span class="icon-tile icon-tile--tertiary"><span class="ms" aria-hidden="true">public</span></span>
+            <div><b>Where we work</b><span class="small muted">Remote-first, with clients worldwide</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card card--flat reveal">
+        <h2 class="h-sm" style="margin-bottom:1.25rem">What happens next</h2>
+        <ol class="steps-list">
+          <li>We review your message and reply within one business day.</li>
+          <li>We hop on a free 30-minute discovery call.</li>
+          <li>You get a clear roadmap and plan recommendation.</li>
+        </ol>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="faq-title">
+  <div class="container stack">
+    <div class="section-head section-head--center">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h-xl" id="faq-title">Before You Reach Out</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal">
+        <summary>Is the discovery call really free?<span class="ms" aria-hidden="true">add</span></summary>
+        <p>Yes — 30 minutes, no commitment. You'll leave with actionable ideas whether or not we work together.</p>
+      </details>
+      <details class="reveal">
+        <summary>How soon can you start?<span class="ms" aria-hidden="true">add</span></summary>
+        <p>Usually within a week of signing up for a plan. We'll confirm the exact start date on our call.</p>
+      </details>
+      <details class="reveal">
+        <summary>Do you sign NDAs?<span class="ms" aria-hidden="true">add</span></summary>
+        <p>Of course. Everything you share with us is treated as confidential, and we're happy to sign your NDA.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><img src="logo.png" alt="" width="34" height="34"><span>V-Agent</span></a>
+        <p class="small muted">Websites, AI agents and marketing videos for ambitious teams — designed, built and shipped by one studio.</p>
+        <p class="small"><a class="text-link" data-contact-email href="mailto:hello@vagent.online">hello@vagent.online</a></p>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="work.html">Selected Work</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#web">Website Development</a></li>
+          <li><a href="services.html#ai">AI Agents &amp; Automation</a></li>
+          <li><a href="services.html#video">Marketing Videos</a></li>
+          <li><a href="services.html#process">Our Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Stay Ahead</h3>
+        <form class="newsletter" novalidate>
+          <p class="small muted">Occasional insights on web engineering, AI automation and growth.</p>
+          <label class="visually-hidden" for="nl-email">Email address</label>
+          <div class="newsletter__field">
+            <input id="nl-email" type="email" placeholder="Enter your email" autocomplete="email" required>
+            <button type="submit" aria-label="Subscribe"><span class="ms" aria-hidden="true">arrow_forward</span></button>
+          </div>
+          <span class="note" aria-live="polite">No spam. Unsubscribe anytime.</span>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> V-Agent (Virtual Agent). All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
